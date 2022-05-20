@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <input type="file" id="fileinput" multiple accept="image/*" style="display: none;">
+    
+    <img class="upldimg" src="data:image/png;base64,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" alt="">
+        
+
+   
+    <button type="button" class="btn btn-danger rmvbtn" style="display: block; width: 300px; margin-top: 10px; margin-bottom: 10px;" >Remove All</button>
+        <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Images</th>
+                <th scope="col">Name</th>
+                <th scope="col">Size</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+             <tr>
+                 <td class="tdimage"></td>
+                 <td class="tdname"></td>
+                 <td class="tdsize"></td>
+                 <td class="tddelete"></td>
+             </tr>
+            </tbody>
+          </table>
+     
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
